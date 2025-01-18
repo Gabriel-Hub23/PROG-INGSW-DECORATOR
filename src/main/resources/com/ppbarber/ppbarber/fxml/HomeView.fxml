@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneParent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="950.0" prefHeight="700.0" prefWidth="950.0" scaleShape="false" styleClass="external-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ppbarber.ppbarber.Controller.HomeController">
+   <children>
+      <VBox fx:id="vbox" alignment="CENTER_LEFT" layoutX="19.0" layoutY="186.0" prefHeight="321.0" prefWidth="189.0" spacing="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <AnchorPane fx:id="anchorPaneImageView">
+               <children>
+                  <ImageView fx:id="logoView" fitHeight="140.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children></VBox>
+      <Pane fx:id="viewPane" layoutX="209.0" layoutY="14.0" prefHeight="680.0" prefWidth="731.0" styleClass="primary-app-view" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="labelInfo" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="624.0" text="Benvenuto Da P&amp;P Barber">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <VBox layoutX="42.0" layoutY="71.0" prefHeight="239.0" prefWidth="637.0" spacing="10.0">
+               <children>
+                  <Text fx:id="txtInfo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="Il gestore di appuntamenti a portata di click." wrappingWidth="644.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtInfo1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="Qui sotto trovi una guida all'uso." wrappingWidth="640.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtInfo2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="- Dashboard: riporta l'andamento giornaliero dei tuoi appuntamenti e il guadagno previsto;" wrappingWidth="710.5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtInfo3" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="- Appuntamenti: inserisce, modifica e rimuove gli appuntamenti e genera scontrini;" wrappingWidth="705.5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtInfo4" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="- Clienti: gestisce l'elenco dei clienti, con la possibilità di cercali;" wrappingWidth="639.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtInfo5" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="- Servizi: regola i servizi offerti;" wrappingWidth="639.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtInfo6" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="- Dipendenti: permette la gestione dei dipendenti;" wrappingWidth="638.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtInfo7" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="- Impostazioni:  modifiche del tema, ripristino dei dati e gestione delle notifiche;" wrappingWidth="707.5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</AnchorPane>

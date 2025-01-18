@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="external-pane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ppbarber.ppbarber.Controller.LoginController">
+   <children>
+      <Pane fx:id="pane" layoutX="296.0" layoutY="183.0" maxHeight="600" maxWidth="500" minHeight="343.0" minWidth="300" prefHeight="343.0" prefWidth="314.0" styleClass="container-level-2">
+         <children>
+            <VBox layoutX="46.0" layoutY="17.0" prefHeight="310.0" prefWidth="222.0">
+               <children>
+                  <AnchorPane>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="loginLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="159.0" text="Login" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="usernameLabel" contentDisplay="CENTER" text="Username">
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" promptText="username" styleClass="loginField">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="passwordLabel" contentDisplay="CENTER" text="Password">
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField" promptText="password" styleClass="loginField">
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <AnchorPane>
+                     <children>
+                        <Button fx:id="accediButton" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onAction="#accedi" prefHeight="26.0" prefWidth="78.0" styleClass="primaryButton" text="Accedi" textAlignment="CENTER" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="20.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
